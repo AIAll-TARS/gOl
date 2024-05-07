@@ -8,11 +8,12 @@ from randomGrid import randomize_grid
 ROWS = 1000
 COLS = 1000
 RULES = [birth_rule, lonely_death_rule, stay_alive_rule, over_populate_rule]
-GENERATIONS = 1000
-SLEEP_TIME = 0.01
+GENERATIONS = 10
+SLEEP_TIME = 0.1
 OUTPUT_TYPE = "visualizer"  # console | visualizer
 RANDOMIZE = True
-ALIVE_PROBABILITY = 0.7
+ALIVE_PROBABILITY = 0.5
+
 
 
 def save_grid_setup(grid: Grid, filename: str) -> None:
